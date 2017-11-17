@@ -10,9 +10,19 @@ def generate_fake_name():
     return full_name.split()
 
 
+def format_string(resp_string):
+    result = resp_string.split()
+    return result[0]
+
+
 def generate_string():
-    random_string = ''.join([choice(string.ascii_letters + string.digits) for n in xrange(8)])
+    random_string = ''.join([choice(string.ascii_letters + string.digits) for n in xrange(8)]) + '@srypto.net'
     return random_string
+
+
+def hash_email(email):
+    from hashlib import md5
+    return md5(email).hexdigest()
 
 
 def relative2absolute(relative_path):
