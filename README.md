@@ -10,7 +10,7 @@ Expected Python 2.7.X and pip 2.X installed on your system
 ### How to setup
 Paste in terminal:
 
-    pip install robotframework robotframework-selenium2library robotframework-selenium2screenshots Faker
+    pip install robotframework robotframework-selenium2library robotframework-selenium2screenshots Faker requests robotframework-httplibrary robotframework-requests
 
 ### How to run
 Paste in terminal:
